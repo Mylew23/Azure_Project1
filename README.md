@@ -29,10 +29,10 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 
 | Name     | Function | IP Address | Operating System |
 |----------|----------|------------|------------------|
-| Jump Box | Gateway  | 10.1.0.4   |Linux            |
-| WEB1     |          | 10.1.0.6   |Linux UBUNTU 18.4 |
-| WEB2     |          | 10.1.0.7   |Linux UBUNTU 18.4 |
-| ELKVM    |          | 10.2.0.4   |Linux UBUNTU 18.4 |
+| Jump Box | Gateway  | 10.1.0.4   |Linux             |
+| WEB1     | Webserver| 10.1.0.6   |Linux UBUNTU      |
+| WEB2     | Webserver| 10.1.0.7   |Linux UBUNTU      |
+| ELKVM    |ELK Server| 10.2.0.4   |Linux UBUNTU      |
 
 ### Access Policies
 
@@ -46,9 +46,10 @@ A summary of the access policies in place can be found in the table below.
 
 | Name     | Publicly Accessible | Allowed IP Addresses |
 |----------|---------------------|----------------------|
-| Jump Box | Yes/No              | 10.0.0.1 10.0.0.2    |
-|          |                     |                      |
-|          |                     |                      |
+| Jump Box | Yes                 | 10.1.0.4             |
+| Web1     | No                  | 10.1.0.6             |
+| Web2     | No                  | 10.1.0.7             |
+| ELKVM    | No                  | 10.2.0.4             |
 
 ### Elk Configuration
 
