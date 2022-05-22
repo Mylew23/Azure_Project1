@@ -19,9 +19,14 @@ How to Use the Ansible Build
 
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
-Load balancing ensures that the application will be highly _____, in addition to restricting _____ to the network.
-TODO: What aspect of security do load balancers protect? What is the advantage of a jump box?
-Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the _____ and system _____.
+Load balancing ensures that the application will be highly available and effiecient, in addition to restricting unwanted access to the network.
+What aspect of security do load balancers protect? 
+A Load balancer distributes incoming requests or application traffic over web servers. It ensures the availability aspect for the webservers 🔺 (CIA Triad) 🔺. Load balancer will mitigate or reduce Distributed Denial of service 🛑 (DDoS) ⚠️ attack on one of the servers making it unavailable, which protects the system from any attacking traffic or penetrations by hackers. 
+
+What is the advantage of a jump box?
+The JumpBox is a secure computer that admins can connect to before giving out administrative tasks. An advantage of the Jump box is allowing a 🖥 Secure Admin Workstation 🖥  (SAW). Only specific IP addresses and port 22 (SSH) will be allowed to access the JumpBox being secured and monitored. To give out any administrative task admins must connect to the JumpBox.
+
+Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the logs and system metrics.
 TODO: What does Filebeat watch for?
 TODO: What does Metricbeat record?
 The configuration details of each machine may be found below.
@@ -30,9 +35,9 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 | Name     | Function | IP Address | Operating System |
 |----------|----------|------------|------------------|
 | Jump Box | Gateway  | 10.1.0.4   |Linux             |
-| WEB1     | Webserver| 10.1.0.6   |Linux UBUNTU      |
-| WEB2     | Webserver| 10.1.0.7   |Linux UBUNTU      |
-| ELKVM    |ELK Server| 10.2.0.4   |Linux UBUNTU      |
+| WEB1     | Webserver| 10.1.0.6   |Linux             |
+| WEB2     | Webserver| 10.1.0.7   |Linux             |
+| ELKVM    |ELK Server| 10.2.0.4   |Linux             |
 
 ### Access Policies
 
