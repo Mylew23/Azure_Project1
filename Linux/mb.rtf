@@ -1,0 +1,686 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1671\cocoasubrtf600
+{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;\f1\froman\fcharset0 TimesNewRomanPSMT;\f2\fswiss\fcharset0 Helvetica;
+}
+{\colortbl;\red255\green255\blue255;\red191\green191\blue191;}
+{\*\expandedcolortbl;;\csgray\c79525;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab720
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clbrdrt\brdrs\brdrw20\brdrcf2 \clbrdrl\brdrs\brdrw20\brdrcf2 \clbrdrb\brdrs\brdrw20\brdrcf2 \clbrdrr\brdrs\brdrw20\brdrcf2 \clpadt150 \clpadl0 \clpadr150 \gaph\cellx4320
+\clmrg \clvertalt \clshdrawnil \clbrdrt\brdrs\brdrw20\brdrcf2 \clbrdrl\brdrs\brdrw20\brdrcf2 \clbrdrb\brdrs\brdrw20\brdrcf2 \clbrdrr\brdrs\brdrw20\brdrcf2 \clpadt150 \clpadl0 \clpadr150 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\ri0\sl300\partightenfactor0
+
+\f0\fs18 \cf0 GNU nano 4.8                                                                                       ansible.cfg\
+\pard\intbl\itap1\pardeftab720\ri0\partightenfactor0
+
+\f1\fs24 \cf0 \cell 
+\pard\intbl\itap1\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth750\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf2 \clbrdrl\brdrs\brdrw20\brdrcf2 \clbrdrb\brdrs\brdrw20\brdrcf2 \clbrdrr\brdrs\brdrw20\brdrcf2 \clpadt150 \clpadl0 \clpadr150 \gaph\cellx4320
+\clvertalt \clshdrawnil \clbrdrt\brdrs\brdrw20\brdrcf2 \clbrdrl\brdrs\brdrw20\brdrcf2 \clbrdrb\brdrs\brdrw20\brdrcf2 \clbrdrr\brdrs\brdrw20\brdrcf2 \clpadt150 \clpadl0 \clpadr150 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\ri0\sl300\partightenfactor0
+
+\fs20 \cf0 \cell 
+\pard\intbl\itap1\pardeftab720\ri0\sl300\partightenfactor0
+
+\f0\fs18 \cf0 # config file for ansible -- https://ansible.com/\
+\pard\intbl\itap1\pardeftab720\ri0\sl300\qr\partightenfactor0
+
+\f1\fs20 \cf0 \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth750\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf2 \clbrdrl\brdrs\brdrw20\brdrcf2 \clbrdrb\brdrs\brdrw20\brdrcf2 \clbrdrr\brdrs\brdrw20\brdrcf2 \clpadt150 \clpadl0 \clpadr150 \gaph\cellx4320
+\clvertalt \clshdrawnil \clbrdrt\brdrs\brdrw20\brdrcf2 \clbrdrl\brdrs\brdrw20\brdrcf2 \clbrdrb\brdrs\brdrw20\brdrcf2 \clbrdrr\brdrs\brdrw20\brdrcf2 \clpadt150 \clpadl0 \clpadr150 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\ri0\sl300\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\ri0\sl300\partightenfactor0
+
+\f0\fs18 \cf0 # ===============================================\
+\pard\intbl\itap1\pardeftab720\ri0\sl300\qr\partightenfactor0
+
+\f1\fs20 \cf0 \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth750\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf2 \clbrdrl\brdrs\brdrw20\brdrcf2 \clbrdrb\brdrs\brdrw20\brdrcf2 \clbrdrr\brdrs\brdrw20\brdrcf2 \clpadt150 \clpadl0 \clpadr150 \gaph\cellx4320
+\clvertalt \clshdrawnil \clbrdrt\brdrs\brdrw20\brdrcf2 \clbrdrl\brdrs\brdrw20\brdrcf2 \clbrdrb\brdrs\brdrw20\brdrcf2 \clbrdrr\brdrs\brdrw20\brdrcf2 \clpadt150 \clpadl0 \clpadr150 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\ri0\sl300\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\ri0\sl300\partightenfactor0
+
+\f0\fs18 \cf0 \
+\pard\intbl\itap1\pardeftab720\ri0\sl300\qr\partightenfactor0
+
+\f1\fs20 \cf0 \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth750\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf2 \clbrdrl\brdrs\brdrw20\brdrcf2 \clbrdrb\brdrs\brdrw20\brdrcf2 \clbrdrr\brdrs\brdrw20\brdrcf2 \clpadt150 \clpadl0 \clpadr150 \gaph\cellx4320
+\clvertalt \clshdrawnil \clbrdrt\brdrs\brdrw20\brdrcf2 \clbrdrl\brdrs\brdrw20\brdrcf2 \clbrdrb\brdrs\brdrw20\brdrcf2 \clbrdrr\brdrs\brdrw20\brdrcf2 \clpadt150 \clpadl0 \clpadr150 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\ri0\sl300\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\ri0\sl300\partightenfactor0
+
+\f0\fs18 \cf0 # nearly all parameters can be overridden in ansible-playbook\
+\pard\intbl\itap1\pardeftab720\ri0\sl300\qr\partightenfactor0
+
+\f1\fs20 \cf0 \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth750\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf2 \clbrdrl\brdrs\brdrw20\brdrcf2 \clbrdrb\brdrs\brdrw20\brdrcf2 \clbrdrr\brdrs\brdrw20\brdrcf2 \clpadt150 \clpadl0 \clpadr150 \gaph\cellx4320
+\clvertalt \clshdrawnil \clbrdrt\brdrs\brdrw20\brdrcf2 \clbrdrl\brdrs\brdrw20\brdrcf2 \clbrdrb\brdrs\brdrw20\brdrcf2 \clbrdrr\brdrs\brdrw20\brdrcf2 \clpadt150 \clpadl0 \clpadr150 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\ri0\sl300\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\ri0\sl300\partightenfactor0
+
+\f0\fs18 \cf0 # or with command line flags. ansible will read ANSIBLE_CONFIG,\
+\pard\intbl\itap1\pardeftab720\ri0\sl300\qr\partightenfactor0
+
+\f1\fs20 \cf0 \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth750\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf2 \clbrdrl\brdrs\brdrw20\brdrcf2 \clbrdrb\brdrs\brdrw20\brdrcf2 \clbrdrr\brdrs\brdrw20\brdrcf2 \clpadt150 \clpadl0 \clpadr150 \gaph\cellx4320
+\clvertalt \clshdrawnil \clbrdrt\brdrs\brdrw20\brdrcf2 \clbrdrl\brdrs\brdrw20\brdrcf2 \clbrdrb\brdrs\brdrw20\brdrcf2 \clbrdrr\brdrs\brdrw20\brdrcf2 \clpadt150 \clpadl0 \clpadr150 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\ri0\sl300\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\ri0\sl300\partightenfactor0
+
+\f0\fs18 \cf0 # ansible.cfg in the current working directory, .ansible.cfg in\
+\pard\intbl\itap1\pardeftab720\ri0\sl300\qr\partightenfactor0
+
+\f1\fs20 \cf0 \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth750\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf2 \clbrdrl\brdrs\brdrw20\brdrcf2 \clbrdrb\brdrs\brdrw20\brdrcf2 \clbrdrr\brdrs\brdrw20\brdrcf2 \clpadt150 \clpadl0 \clpadr150 \gaph\cellx4320
+\clvertalt \clshdrawnil \clbrdrt\brdrs\brdrw20\brdrcf2 \clbrdrl\brdrs\brdrw20\brdrcf2 \clbrdrb\brdrs\brdrw20\brdrcf2 \clbrdrr\brdrs\brdrw20\brdrcf2 \clpadt150 \clpadl0 \clpadr150 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\ri0\sl300\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\ri0\sl300\partightenfactor0
+
+\f0\fs18 \cf0 # the home directory or /etc/ansible/ansible.cfg, whichever it\
+\pard\intbl\itap1\pardeftab720\ri0\sl300\qr\partightenfactor0
+
+\f1\fs20 \cf0 \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth750\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf2 \clbrdrl\brdrs\brdrw20\brdrcf2 \clbrdrb\brdrs\brdrw20\brdrcf2 \clbrdrr\brdrs\brdrw20\brdrcf2 \clpadt150 \clpadl0 \clpadr150 \gaph\cellx4320
+\clvertalt \clshdrawnil \clbrdrt\brdrs\brdrw20\brdrcf2 \clbrdrl\brdrs\brdrw20\brdrcf2 \clbrdrb\brdrs\brdrw20\brdrcf2 \clbrdrr\brdrs\brdrw20\brdrcf2 \clpadt150 \clpadl0 \clpadr150 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\ri0\sl300\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\ri0\sl300\partightenfactor0
+
+\f0\fs18 \cf0 # finds first\
+\pard\intbl\itap1\pardeftab720\ri0\sl300\qr\partightenfactor0
+
+\f1\fs20 \cf0 \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth750\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf2 \clbrdrl\brdrs\brdrw20\brdrcf2 \clbrdrb\brdrs\brdrw20\brdrcf2 \clbrdrr\brdrs\brdrw20\brdrcf2 \clpadt150 \clpadl0 \clpadr150 \gaph\cellx4320
+\clvertalt \clshdrawnil \clbrdrt\brdrs\brdrw20\brdrcf2 \clbrdrl\brdrs\brdrw20\brdrcf2 \clbrdrb\brdrs\brdrw20\brdrcf2 \clbrdrr\brdrs\brdrw20\brdrcf2 \clpadt150 \clpadl0 \clpadr150 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\ri0\sl300\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\ri0\sl300\partightenfactor0
+
+\f0\fs18 \cf0 \
+\pard\intbl\itap1\pardeftab720\ri0\sl300\qr\partightenfactor0
+
+\f1\fs20 \cf0 \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth750\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf2 \clbrdrl\brdrs\brdrw20\brdrcf2 \clbrdrb\brdrs\brdrw20\brdrcf2 \clbrdrr\brdrs\brdrw20\brdrcf2 \clpadt150 \clpadl0 \clpadr150 \gaph\cellx4320
+\clvertalt \clshdrawnil \clbrdrt\brdrs\brdrw20\brdrcf2 \clbrdrl\brdrs\brdrw20\brdrcf2 \clbrdrb\brdrs\brdrw20\brdrcf2 \clbrdrr\brdrs\brdrw20\brdrcf2 \clpadt150 \clpadl0 \clpadr150 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\ri0\sl300\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\ri0\sl300\partightenfactor0
+
+\f0\fs18 \cf0 [defaults]\
+\pard\intbl\itap1\pardeftab720\ri0\sl300\qr\partightenfactor0
+
+\f1\fs20 \cf0 \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth750\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf2 \clbrdrl\brdrs\brdrw20\brdrcf2 \clbrdrb\brdrs\brdrw20\brdrcf2 \clbrdrr\brdrs\brdrw20\brdrcf2 \clpadt150 \clpadl0 \clpadr150 \gaph\cellx4320
+\clvertalt \clshdrawnil \clbrdrt\brdrs\brdrw20\brdrcf2 \clbrdrl\brdrs\brdrw20\brdrcf2 \clbrdrb\brdrs\brdrw20\brdrcf2 \clbrdrr\brdrs\brdrw20\brdrcf2 \clpadt150 \clpadl0 \clpadr150 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\ri0\sl300\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\ri0\sl300\partightenfactor0
+
+\f0\fs18 \cf0 \
+\pard\intbl\itap1\pardeftab720\ri0\sl300\qr\partightenfactor0
+
+\f1\fs20 \cf0 \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth750\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf2 \clbrdrl\brdrs\brdrw20\brdrcf2 \clbrdrb\brdrs\brdrw20\brdrcf2 \clbrdrr\brdrs\brdrw20\brdrcf2 \clpadt150 \clpadl0 \clpadr150 \gaph\cellx4320
+\clvertalt \clshdrawnil \clbrdrt\brdrs\brdrw20\brdrcf2 \clbrdrl\brdrs\brdrw20\brdrcf2 \clbrdrb\brdrs\brdrw20\brdrcf2 \clbrdrr\brdrs\brdrw20\brdrcf2 \clpadt150 \clpadl0 \clpadr150 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\ri0\sl300\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\ri0\sl300\partightenfactor0
+
+\f0\fs18 \cf0 # some basic default values...\
+\pard\intbl\itap1\pardeftab720\ri0\sl300\qr\partightenfactor0
+
+\f1\fs20 \cf0 \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth750\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf2 \clbrdrl\brdrs\brdrw20\brdrcf2 \clbrdrb\brdrs\brdrw20\brdrcf2 \clbrdrr\brdrs\brdrw20\brdrcf2 \clpadt150 \clpadl0 \clpadr150 \gaph\cellx4320
+\clvertalt \clshdrawnil \clbrdrt\brdrs\brdrw20\brdrcf2 \clbrdrl\brdrs\brdrw20\brdrcf2 \clbrdrb\brdrs\brdrw20\brdrcf2 \clbrdrr\brdrs\brdrw20\brdrcf2 \clpadt150 \clpadl0 \clpadr150 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\ri0\sl300\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\ri0\sl300\partightenfactor0
+
+\f0\fs18 \cf0 \
+\pard\intbl\itap1\pardeftab720\ri0\sl300\qr\partightenfactor0
+
+\f1\fs20 \cf0 \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth750\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf2 \clbrdrl\brdrs\brdrw20\brdrcf2 \clbrdrb\brdrs\brdrw20\brdrcf2 \clbrdrr\brdrs\brdrw20\brdrcf2 \clpadt150 \clpadl0 \clpadr150 \gaph\cellx4320
+\clvertalt \clshdrawnil \clbrdrt\brdrs\brdrw20\brdrcf2 \clbrdrl\brdrs\brdrw20\brdrcf2 \clbrdrb\brdrs\brdrw20\brdrcf2 \clbrdrr\brdrs\brdrw20\brdrcf2 \clpadt150 \clpadl0 \clpadr150 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\ri0\sl300\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\ri0\sl300\partightenfactor0
+
+\f0\fs18 \cf0 #inventory      = /etc/ansible/hosts\
+\pard\intbl\itap1\pardeftab720\ri0\sl300\qr\partightenfactor0
+
+\f1\fs20 \cf0 \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth750\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf2 \clbrdrl\brdrs\brdrw20\brdrcf2 \clbrdrb\brdrs\brdrw20\brdrcf2 \clbrdrr\brdrs\brdrw20\brdrcf2 \clpadt150 \clpadl0 \clpadr150 \gaph\cellx4320
+\clvertalt \clshdrawnil \clbrdrt\brdrs\brdrw20\brdrcf2 \clbrdrl\brdrs\brdrw20\brdrcf2 \clbrdrb\brdrs\brdrw20\brdrcf2 \clbrdrr\brdrs\brdrw20\brdrcf2 \clpadt150 \clpadl0 \clpadr150 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\ri0\sl300\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\ri0\sl300\partightenfactor0
+
+\f0\fs18 \cf0 #library        = /usr/share/my_modules/\
+\pard\intbl\itap1\pardeftab720\ri0\sl300\qr\partightenfactor0
+
+\f1\fs20 \cf0 \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth750\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf2 \clbrdrl\brdrs\brdrw20\brdrcf2 \clbrdrb\brdrs\brdrw20\brdrcf2 \clbrdrr\brdrs\brdrw20\brdrcf2 \clpadt150 \clpadl0 \clpadr150 \gaph\cellx4320
+\clvertalt \clshdrawnil \clbrdrt\brdrs\brdrw20\brdrcf2 \clbrdrl\brdrs\brdrw20\brdrcf2 \clbrdrb\brdrs\brdrw20\brdrcf2 \clbrdrr\brdrs\brdrw20\brdrcf2 \clpadt150 \clpadl0 \clpadr150 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\ri0\sl300\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\ri0\sl300\partightenfactor0
+
+\f0\fs18 \cf0 #module_utils   = /usr/share/my_module_utils/\
+\pard\intbl\itap1\pardeftab720\ri0\sl300\qr\partightenfactor0
+
+\f1\fs20 \cf0 \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth750\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf2 \clbrdrl\brdrs\brdrw20\brdrcf2 \clbrdrb\brdrs\brdrw20\brdrcf2 \clbrdrr\brdrs\brdrw20\brdrcf2 \clpadt150 \clpadl0 \clpadr150 \gaph\cellx4320
+\clvertalt \clshdrawnil \clbrdrt\brdrs\brdrw20\brdrcf2 \clbrdrl\brdrs\brdrw20\brdrcf2 \clbrdrb\brdrs\brdrw20\brdrcf2 \clbrdrr\brdrs\brdrw20\brdrcf2 \clpadt150 \clpadl0 \clpadr150 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\ri0\sl300\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\ri0\sl300\partightenfactor0
+
+\f0\fs18 \cf0 #remote_tmp     = ~/.ansible/tmp\
+\pard\intbl\itap1\pardeftab720\ri0\sl300\qr\partightenfactor0
+
+\f1\fs20 \cf0 \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth750\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf2 \clbrdrl\brdrs\brdrw20\brdrcf2 \clbrdrb\brdrs\brdrw20\brdrcf2 \clbrdrr\brdrs\brdrw20\brdrcf2 \clpadt150 \clpadl0 \clpadr150 \gaph\cellx4320
+\clvertalt \clshdrawnil \clbrdrt\brdrs\brdrw20\brdrcf2 \clbrdrl\brdrs\brdrw20\brdrcf2 \clbrdrb\brdrs\brdrw20\brdrcf2 \clbrdrr\brdrs\brdrw20\brdrcf2 \clpadt150 \clpadl0 \clpadr150 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\ri0\sl300\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\ri0\sl300\partightenfactor0
+
+\f0\fs18 \cf0 #local_tmp      = ~/.ansible/tmp\
+\pard\intbl\itap1\pardeftab720\ri0\sl300\qr\partightenfactor0
+
+\f1\fs20 \cf0 \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth750\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf2 \clbrdrl\brdrs\brdrw20\brdrcf2 \clbrdrb\brdrs\brdrw20\brdrcf2 \clbrdrr\brdrs\brdrw20\brdrcf2 \clpadt150 \clpadl0 \clpadr150 \gaph\cellx4320
+\clvertalt \clshdrawnil \clbrdrt\brdrs\brdrw20\brdrcf2 \clbrdrl\brdrs\brdrw20\brdrcf2 \clbrdrb\brdrs\brdrw20\brdrcf2 \clbrdrr\brdrs\brdrw20\brdrcf2 \clpadt150 \clpadl0 \clpadr150 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\ri0\sl300\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\ri0\sl300\partightenfactor0
+
+\f0\fs18 \cf0 #plugin_filters_cfg = /etc/ansible/plugin_filters.yml\
+\pard\intbl\itap1\pardeftab720\ri0\sl300\qr\partightenfactor0
+
+\f1\fs20 \cf0 \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth750\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf2 \clbrdrl\brdrs\brdrw20\brdrcf2 \clbrdrb\brdrs\brdrw20\brdrcf2 \clbrdrr\brdrs\brdrw20\brdrcf2 \clpadt150 \clpadl0 \clpadr150 \gaph\cellx4320
+\clvertalt \clshdrawnil \clbrdrt\brdrs\brdrw20\brdrcf2 \clbrdrl\brdrs\brdrw20\brdrcf2 \clbrdrb\brdrs\brdrw20\brdrcf2 \clbrdrr\brdrs\brdrw20\brdrcf2 \clpadt150 \clpadl0 \clpadr150 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\ri0\sl300\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\ri0\sl300\partightenfactor0
+
+\f0\fs18 \cf0 #forks          = 5\
+\pard\intbl\itap1\pardeftab720\ri0\sl300\qr\partightenfactor0
+
+\f1\fs20 \cf0 \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth750\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf2 \clbrdrl\brdrs\brdrw20\brdrcf2 \clbrdrb\brdrs\brdrw20\brdrcf2 \clbrdrr\brdrs\brdrw20\brdrcf2 \clpadt150 \clpadl0 \clpadr150 \gaph\cellx4320
+\clvertalt \clshdrawnil \clbrdrt\brdrs\brdrw20\brdrcf2 \clbrdrl\brdrs\brdrw20\brdrcf2 \clbrdrb\brdrs\brdrw20\brdrcf2 \clbrdrr\brdrs\brdrw20\brdrcf2 \clpadt150 \clpadl0 \clpadr150 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\ri0\sl300\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\ri0\sl300\partightenfactor0
+
+\f0\fs18 \cf0 #poll_interval  = 15\
+\pard\intbl\itap1\pardeftab720\ri0\sl300\qr\partightenfactor0
+
+\f1\fs20 \cf0 \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth750\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf2 \clbrdrl\brdrs\brdrw20\brdrcf2 \clbrdrb\brdrs\brdrw20\brdrcf2 \clbrdrr\brdrs\brdrw20\brdrcf2 \clpadt150 \clpadl0 \clpadr150 \gaph\cellx4320
+\clvertalt \clshdrawnil \clbrdrt\brdrs\brdrw20\brdrcf2 \clbrdrl\brdrs\brdrw20\brdrcf2 \clbrdrb\brdrs\brdrw20\brdrcf2 \clbrdrr\brdrs\brdrw20\brdrcf2 \clpadt150 \clpadl0 \clpadr150 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\ri0\sl300\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\ri0\sl300\partightenfactor0
+
+\f0\fs18 \cf0 #sudo_user      = root\
+\pard\intbl\itap1\pardeftab720\ri0\sl300\qr\partightenfactor0
+
+\f1\fs20 \cf0 \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth750\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf2 \clbrdrl\brdrs\brdrw20\brdrcf2 \clbrdrb\brdrs\brdrw20\brdrcf2 \clbrdrr\brdrs\brdrw20\brdrcf2 \clpadt150 \clpadl0 \clpadr150 \gaph\cellx4320
+\clvertalt \clshdrawnil \clbrdrt\brdrs\brdrw20\brdrcf2 \clbrdrl\brdrs\brdrw20\brdrcf2 \clbrdrb\brdrs\brdrw20\brdrcf2 \clbrdrr\brdrs\brdrw20\brdrcf2 \clpadt150 \clpadl0 \clpadr150 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\ri0\sl300\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\ri0\sl300\partightenfactor0
+
+\f0\fs18 \cf0 #ask_sudo_pass = True\
+\pard\intbl\itap1\pardeftab720\ri0\sl300\qr\partightenfactor0
+
+\f1\fs20 \cf0 \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth750\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf2 \clbrdrl\brdrs\brdrw20\brdrcf2 \clbrdrb\brdrs\brdrw20\brdrcf2 \clbrdrr\brdrs\brdrw20\brdrcf2 \clpadt150 \clpadl0 \clpadr150 \gaph\cellx4320
+\clvertalt \clshdrawnil \clbrdrt\brdrs\brdrw20\brdrcf2 \clbrdrl\brdrs\brdrw20\brdrcf2 \clbrdrb\brdrs\brdrw20\brdrcf2 \clbrdrr\brdrs\brdrw20\brdrcf2 \clpadt150 \clpadl0 \clpadr150 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\ri0\sl300\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\ri0\sl300\partightenfactor0
+
+\f0\fs18 \cf0 #ask_pass      = True\
+\pard\intbl\itap1\pardeftab720\ri0\sl300\qr\partightenfactor0
+
+\f1\fs20 \cf0 \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth750\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf2 \clbrdrl\brdrs\brdrw20\brdrcf2 \clbrdrb\brdrs\brdrw20\brdrcf2 \clbrdrr\brdrs\brdrw20\brdrcf2 \clpadt150 \clpadl0 \clpadr150 \gaph\cellx4320
+\clvertalt \clshdrawnil \clbrdrt\brdrs\brdrw20\brdrcf2 \clbrdrl\brdrs\brdrw20\brdrcf2 \clbrdrb\brdrs\brdrw20\brdrcf2 \clbrdrr\brdrs\brdrw20\brdrcf2 \clpadt150 \clpadl0 \clpadr150 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\ri0\sl300\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\ri0\sl300\partightenfactor0
+
+\f0\fs18 \cf0 #transport      = smart\
+\pard\intbl\itap1\pardeftab720\ri0\sl300\qr\partightenfactor0
+
+\f1\fs20 \cf0 \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth750\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf2 \clbrdrl\brdrs\brdrw20\brdrcf2 \clbrdrb\brdrs\brdrw20\brdrcf2 \clbrdrr\brdrs\brdrw20\brdrcf2 \clpadt150 \clpadl0 \clpadr150 \gaph\cellx4320
+\clvertalt \clshdrawnil \clbrdrt\brdrs\brdrw20\brdrcf2 \clbrdrl\brdrs\brdrw20\brdrcf2 \clbrdrb\brdrs\brdrw20\brdrcf2 \clbrdrr\brdrs\brdrw20\brdrcf2 \clpadt150 \clpadl0 \clpadr150 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\ri0\sl300\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\ri0\sl300\partightenfactor0
+
+\f0\fs18 \cf0 #remote_port    = 22\
+\pard\intbl\itap1\pardeftab720\ri0\sl300\qr\partightenfactor0
+
+\f1\fs20 \cf0 \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth750\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf2 \clbrdrl\brdrs\brdrw20\brdrcf2 \clbrdrb\brdrs\brdrw20\brdrcf2 \clbrdrr\brdrs\brdrw20\brdrcf2 \clpadt150 \clpadl0 \clpadr150 \gaph\cellx4320
+\clvertalt \clshdrawnil \clbrdrt\brdrs\brdrw20\brdrcf2 \clbrdrl\brdrs\brdrw20\brdrcf2 \clbrdrb\brdrs\brdrw20\brdrcf2 \clbrdrr\brdrs\brdrw20\brdrcf2 \clpadt150 \clpadl0 \clpadr150 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\ri0\sl300\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\ri0\sl300\partightenfactor0
+
+\f0\fs18 \cf0 #module_lang    = C\
+\pard\intbl\itap1\pardeftab720\ri0\sl300\qr\partightenfactor0
+
+\f1\fs20 \cf0 \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth750\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf2 \clbrdrl\brdrs\brdrw20\brdrcf2 \clbrdrb\brdrs\brdrw20\brdrcf2 \clbrdrr\brdrs\brdrw20\brdrcf2 \clpadt150 \clpadl0 \clpadr150 \gaph\cellx4320
+\clvertalt \clshdrawnil \clbrdrt\brdrs\brdrw20\brdrcf2 \clbrdrl\brdrs\brdrw20\brdrcf2 \clbrdrb\brdrs\brdrw20\brdrcf2 \clbrdrr\brdrs\brdrw20\brdrcf2 \clpadt150 \clpadl0 \clpadr150 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\ri0\sl300\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\ri0\sl300\partightenfactor0
+
+\f0\fs18 \cf0 #module_set_locale = False\
+\pard\intbl\itap1\pardeftab720\ri0\sl300\qr\partightenfactor0
+
+\f1\fs20 \cf0 \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth750\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf2 \clbrdrl\brdrs\brdrw20\brdrcf2 \clbrdrb\brdrs\brdrw20\brdrcf2 \clbrdrr\brdrs\brdrw20\brdrcf2 \clpadt150 \clpadl0 \clpadr150 \gaph\cellx4320
+\clvertalt \clshdrawnil \clbrdrt\brdrs\brdrw20\brdrcf2 \clbrdrl\brdrs\brdrw20\brdrcf2 \clbrdrb\brdrs\brdrw20\brdrcf2 \clbrdrr\brdrs\brdrw20\brdrcf2 \clpadt150 \clpadl0 \clpadr150 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\ri0\sl300\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\ri0\sl300\partightenfactor0
+
+\f0\fs18 \cf0 \
+\pard\intbl\itap1\pardeftab720\ri0\sl300\qr\partightenfactor0
+
+\f1\fs20 \cf0 \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth750\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf2 \clbrdrl\brdrs\brdrw20\brdrcf2 \clbrdrb\brdrs\brdrw20\brdrcf2 \clbrdrr\brdrs\brdrw20\brdrcf2 \clpadt150 \clpadl0 \clpadr150 \gaph\cellx4320
+\clvertalt \clshdrawnil \clbrdrt\brdrs\brdrw20\brdrcf2 \clbrdrl\brdrs\brdrw20\brdrcf2 \clbrdrb\brdrs\brdrw20\brdrcf2 \clbrdrr\brdrs\brdrw20\brdrcf2 \clpadt150 \clpadl0 \clpadr150 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\ri0\sl300\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\ri0\sl300\partightenfactor0
+
+\f0\fs18 \cf0 # plays will gather facts by default, which contain information about\
+\pard\intbl\itap1\pardeftab720\ri0\sl300\qr\partightenfactor0
+
+\f1\fs20 \cf0 \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth750\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf2 \clbrdrl\brdrs\brdrw20\brdrcf2 \clbrdrb\brdrs\brdrw20\brdrcf2 \clbrdrr\brdrs\brdrw20\brdrcf2 \clpadt150 \clpadl0 \clpadr150 \gaph\cellx4320
+\clvertalt \clshdrawnil \clbrdrt\brdrs\brdrw20\brdrcf2 \clbrdrl\brdrs\brdrw20\brdrcf2 \clbrdrb\brdrs\brdrw20\brdrcf2 \clbrdrr\brdrs\brdrw20\brdrcf2 \clpadt150 \clpadl0 \clpadr150 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\ri0\sl300\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\ri0\sl300\partightenfactor0
+
+\f0\fs18 \cf0 # the remote system.\
+\pard\intbl\itap1\pardeftab720\ri0\sl300\qr\partightenfactor0
+
+\f1\fs20 \cf0 \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth750\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf2 \clbrdrl\brdrs\brdrw20\brdrcf2 \clbrdrb\brdrs\brdrw20\brdrcf2 \clbrdrr\brdrs\brdrw20\brdrcf2 \clpadt150 \clpadl0 \clpadr150 \gaph\cellx4320
+\clvertalt \clshdrawnil \clbrdrt\brdrs\brdrw20\brdrcf2 \clbrdrl\brdrs\brdrw20\brdrcf2 \clbrdrb\brdrs\brdrw20\brdrcf2 \clbrdrr\brdrs\brdrw20\brdrcf2 \clpadt150 \clpadl0 \clpadr150 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\ri0\sl300\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\ri0\sl300\partightenfactor0
+
+\f0\fs18 \cf0 #\
+\pard\intbl\itap1\pardeftab720\ri0\sl300\qr\partightenfactor0
+
+\f1\fs20 \cf0 \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth750\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf2 \clbrdrl\brdrs\brdrw20\brdrcf2 \clbrdrb\brdrs\brdrw20\brdrcf2 \clbrdrr\brdrs\brdrw20\brdrcf2 \clpadt150 \clpadl0 \clpadr150 \gaph\cellx4320
+\clvertalt \clshdrawnil \clbrdrt\brdrs\brdrw20\brdrcf2 \clbrdrl\brdrs\brdrw20\brdrcf2 \clbrdrb\brdrs\brdrw20\brdrcf2 \clbrdrr\brdrs\brdrw20\brdrcf2 \clpadt150 \clpadl0 \clpadr150 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\ri0\sl300\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\ri0\sl300\partightenfactor0
+
+\f0\fs18 \cf0 # smart - gather by default, but don't regather if already gathered\
+\pard\intbl\itap1\pardeftab720\ri0\sl300\qr\partightenfactor0
+
+\f1\fs20 \cf0 \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth750\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf2 \clbrdrl\brdrs\brdrw20\brdrcf2 \clbrdrb\brdrs\brdrw20\brdrcf2 \clbrdrr\brdrs\brdrw20\brdrcf2 \clpadt150 \clpadl0 \clpadr150 \gaph\cellx4320
+\clvertalt \clshdrawnil \clbrdrt\brdrs\brdrw20\brdrcf2 \clbrdrl\brdrs\brdrw20\brdrcf2 \clbrdrb\brdrs\brdrw20\brdrcf2 \clbrdrr\brdrs\brdrw20\brdrcf2 \clpadt150 \clpadl0 \clpadr150 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\ri0\sl300\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\ri0\sl300\partightenfactor0
+
+\f0\fs18 \cf0 # implicit - gather by default, turn off with gather_facts: False\
+\pard\intbl\itap1\pardeftab720\ri0\sl300\qr\partightenfactor0
+
+\f1\fs20 \cf0 \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth750\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf2 \clbrdrl\brdrs\brdrw20\brdrcf2 \clbrdrb\brdrs\brdrw20\brdrcf2 \clbrdrr\brdrs\brdrw20\brdrcf2 \clpadt150 \clpadl0 \clpadr150 \gaph\cellx4320
+\clvertalt \clshdrawnil \clbrdrt\brdrs\brdrw20\brdrcf2 \clbrdrl\brdrs\brdrw20\brdrcf2 \clbrdrb\brdrs\brdrw20\brdrcf2 \clbrdrr\brdrs\brdrw20\brdrcf2 \clpadt150 \clpadl0 \clpadr150 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\ri0\sl300\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\ri0\sl300\partightenfactor0
+
+\f0\fs18 \cf0 # explicit - do not gather by default, must say gather_facts: True\
+\pard\intbl\itap1\pardeftab720\ri0\sl300\qr\partightenfactor0
+
+\f1\fs20 \cf0 \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth750\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf2 \clbrdrl\brdrs\brdrw20\brdrcf2 \clbrdrb\brdrs\brdrw20\brdrcf2 \clbrdrr\brdrs\brdrw20\brdrcf2 \clpadt150 \clpadl0 \clpadr150 \gaph\cellx4320
+\clvertalt \clshdrawnil \clbrdrt\brdrs\brdrw20\brdrcf2 \clbrdrl\brdrs\brdrw20\brdrcf2 \clbrdrb\brdrs\brdrw20\brdrcf2 \clbrdrr\brdrs\brdrw20\brdrcf2 \clpadt150 \clpadl0 \clpadr150 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\ri0\sl300\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\ri0\sl300\partightenfactor0
+
+\f0\fs18 \cf0 #gathering = implicit\
+\pard\intbl\itap1\pardeftab720\ri0\sl300\qr\partightenfactor0
+
+\f1\fs20 \cf0 \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth750\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf2 \clbrdrl\brdrs\brdrw20\brdrcf2 \clbrdrb\brdrs\brdrw20\brdrcf2 \clbrdrr\brdrs\brdrw20\brdrcf2 \clpadt150 \clpadl0 \clpadr150 \gaph\cellx4320
+\clvertalt \clshdrawnil \clbrdrt\brdrs\brdrw20\brdrcf2 \clbrdrl\brdrs\brdrw20\brdrcf2 \clbrdrb\brdrs\brdrw20\brdrcf2 \clbrdrr\brdrs\brdrw20\brdrcf2 \clpadt150 \clpadl0 \clpadr150 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\ri0\sl300\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\ri0\sl300\partightenfactor0
+
+\f0\fs18 \cf0 \
+\pard\intbl\itap1\pardeftab720\ri0\sl300\qr\partightenfactor0
+
+\f1\fs20 \cf0 \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth750\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf2 \clbrdrl\brdrs\brdrw20\brdrcf2 \clbrdrb\brdrs\brdrw20\brdrcf2 \clbrdrr\brdrs\brdrw20\brdrcf2 \clpadt150 \clpadl0 \clpadr150 \gaph\cellx4320
+\clvertalt \clshdrawnil \clbrdrt\brdrs\brdrw20\brdrcf2 \clbrdrl\brdrs\brdrw20\brdrcf2 \clbrdrb\brdrs\brdrw20\brdrcf2 \clbrdrr\brdrs\brdrw20\brdrcf2 \clpadt150 \clpadl0 \clpadr150 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\ri0\sl300\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\ri0\sl300\partightenfactor0
+
+\f0\fs18 \cf0 # This only affects the gathering done by a play's gather_facts directive,\
+\pard\intbl\itap1\pardeftab720\ri0\sl300\qr\partightenfactor0
+
+\f1\fs20 \cf0 \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth750\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf2 \clbrdrl\brdrs\brdrw20\brdrcf2 \clbrdrb\brdrs\brdrw20\brdrcf2 \clbrdrr\brdrs\brdrw20\brdrcf2 \clpadt150 \clpadl0 \clpadr150 \gaph\cellx4320
+\clvertalt \clshdrawnil \clbrdrt\brdrs\brdrw20\brdrcf2 \clbrdrl\brdrs\brdrw20\brdrcf2 \clbrdrb\brdrs\brdrw20\brdrcf2 \clbrdrr\brdrs\brdrw20\brdrcf2 \clpadt150 \clpadl0 \clpadr150 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\ri0\sl300\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\ri0\sl300\partightenfactor0
+
+\f0\fs18 \cf0 # by default gathering retrieves all facts subsets\
+\pard\intbl\itap1\pardeftab720\ri0\sl300\qr\partightenfactor0
+
+\f1\fs20 \cf0 \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth750\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf2 \clbrdrl\brdrs\brdrw20\brdrcf2 \clbrdrb\brdrs\brdrw20\brdrcf2 \clbrdrr\brdrs\brdrw20\brdrcf2 \clpadt150 \clpadl0 \clpadr150 \gaph\cellx4320
+\clvertalt \clshdrawnil \clbrdrt\brdrs\brdrw20\brdrcf2 \clbrdrl\brdrs\brdrw20\brdrcf2 \clbrdrb\brdrs\brdrw20\brdrcf2 \clbrdrr\brdrs\brdrw20\brdrcf2 \clpadt150 \clpadl0 \clpadr150 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\ri0\sl300\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\ri0\sl300\partightenfactor0
+
+\f0\fs18 \cf0 # all - gather all subsets\
+\pard\intbl\itap1\pardeftab720\ri0\sl300\qr\partightenfactor0
+
+\f1\fs20 \cf0 \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth750\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf2 \clbrdrl\brdrs\brdrw20\brdrcf2 \clbrdrb\brdrs\brdrw20\brdrcf2 \clbrdrr\brdrs\brdrw20\brdrcf2 \clpadt150 \clpadl0 \clpadr150 \gaph\cellx4320
+\clvertalt \clshdrawnil \clbrdrt\brdrs\brdrw20\brdrcf2 \clbrdrl\brdrs\brdrw20\brdrcf2 \clbrdrb\brdrs\brdrw20\brdrcf2 \clbrdrr\brdrs\brdrw20\brdrcf2 \clpadt150 \clpadl0 \clpadr150 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\ri0\sl300\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\ri0\sl300\partightenfactor0
+
+\f0\fs18 \cf0 # network - gather min and network facts\
+\pard\intbl\itap1\pardeftab720\ri0\sl300\qr\partightenfactor0
+
+\f1\fs20 \cf0 \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth750\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf2 \clbrdrl\brdrs\brdrw20\brdrcf2 \clbrdrb\brdrs\brdrw20\brdrcf2 \clbrdrr\brdrs\brdrw20\brdrcf2 \clpadt150 \clpadl0 \clpadr150 \gaph\cellx4320
+\clvertalt \clshdrawnil \clbrdrt\brdrs\brdrw20\brdrcf2 \clbrdrl\brdrs\brdrw20\brdrcf2 \clbrdrb\brdrs\brdrw20\brdrcf2 \clbrdrr\brdrs\brdrw20\brdrcf2 \clpadt150 \clpadl0 \clpadr150 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\ri0\sl300\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\ri0\sl300\partightenfactor0
+
+\f0\fs18 \cf0 # hardware - gather hardware facts (longest facts to retrieve)\
+\pard\intbl\itap1\pardeftab720\ri0\sl300\qr\partightenfactor0
+
+\f1\fs20 \cf0 \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth750\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf2 \clbrdrl\brdrs\brdrw20\brdrcf2 \clbrdrb\brdrs\brdrw20\brdrcf2 \clbrdrr\brdrs\brdrw20\brdrcf2 \clpadt150 \clpadl0 \clpadr150 \gaph\cellx4320
+\clvertalt \clshdrawnil \clbrdrt\brdrs\brdrw20\brdrcf2 \clbrdrl\brdrs\brdrw20\brdrcf2 \clbrdrb\brdrs\brdrw20\brdrcf2 \clbrdrr\brdrs\brdrw20\brdrcf2 \clpadt150 \clpadl0 \clpadr150 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\ri0\sl300\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\ri0\sl300\partightenfactor0
+
+\f0\fs18 \cf0 # virtual - gather min and virtual facts\
+\pard\intbl\itap1\pardeftab720\ri0\sl300\qr\partightenfactor0
+
+\f1\fs20 \cf0 \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth750\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf2 \clbrdrl\brdrs\brdrw20\brdrcf2 \clbrdrb\brdrs\brdrw20\brdrcf2 \clbrdrr\brdrs\brdrw20\brdrcf2 \clpadt150 \clpadl0 \clpadr150 \gaph\cellx4320
+\clvertalt \clshdrawnil \clbrdrt\brdrs\brdrw20\brdrcf2 \clbrdrl\brdrs\brdrw20\brdrcf2 \clbrdrb\brdrs\brdrw20\brdrcf2 \clbrdrr\brdrs\brdrw20\brdrcf2 \clpadt150 \clpadl0 \clpadr150 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\ri0\sl300\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\ri0\sl300\partightenfactor0
+
+\f0\fs18 \cf0 # facter - import facts from facter\
+\pard\intbl\itap1\pardeftab720\ri0\sl300\qr\partightenfactor0
+
+\f1\fs20 \cf0 \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth750\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf2 \clbrdrl\brdrs\brdrw20\brdrcf2 \clbrdrb\brdrs\brdrw20\brdrcf2 \clbrdrr\brdrs\brdrw20\brdrcf2 \clpadt150 \clpadl0 \clpadr150 \gaph\cellx4320
+\clvertalt \clshdrawnil \clbrdrt\brdrs\brdrw20\brdrcf2 \clbrdrl\brdrs\brdrw20\brdrcf2 \clbrdrb\brdrs\brdrw20\brdrcf2 \clbrdrr\brdrs\brdrw20\brdrcf2 \clpadt150 \clpadl0 \clpadr150 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\ri0\sl300\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\ri0\sl300\partightenfactor0
+
+\f0\fs18 \cf0 # ohai - import facts from ohai\
+\pard\intbl\itap1\pardeftab720\ri0\sl300\qr\partightenfactor0
+
+\f1\fs20 \cf0 \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth750\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf2 \clbrdrl\brdrs\brdrw20\brdrcf2 \clbrdrb\brdrs\brdrw20\brdrcf2 \clbrdrr\brdrs\brdrw20\brdrcf2 \clpadt150 \clpadl0 \clpadr150 \gaph\cellx4320
+\clvertalt \clshdrawnil \clbrdrt\brdrs\brdrw20\brdrcf2 \clbrdrl\brdrs\brdrw20\brdrcf2 \clbrdrb\brdrs\brdrw20\brdrcf2 \clbrdrr\brdrs\brdrw20\brdrcf2 \clpadt150 \clpadl0 \clpadr150 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\ri0\sl300\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\ri0\sl300\partightenfactor0
+
+\f0\fs18 \cf0 # You can combine them using comma (ex: network,virtual)\
+\pard\intbl\itap1\pardeftab720\ri0\sl300\qr\partightenfactor0
+
+\f1\fs20 \cf0 \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth750\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf2 \clbrdrl\brdrs\brdrw20\brdrcf2 \clbrdrb\brdrs\brdrw20\brdrcf2 \clbrdrr\brdrs\brdrw20\brdrcf2 \clpadt150 \clpadl0 \clpadr150 \gaph\cellx4320
+\clvertalt \clshdrawnil \clbrdrt\brdrs\brdrw20\brdrcf2 \clbrdrl\brdrs\brdrw20\brdrcf2 \clbrdrb\brdrs\brdrw20\brdrcf2 \clbrdrr\brdrs\brdrw20\brdrcf2 \clpadt150 \clpadl0 \clpadr150 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\ri0\sl300\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\ri0\sl300\partightenfactor0
+
+\f0\fs18 \cf0 # You can negate them using ! (ex: !hardware,!facter,!ohai)\
+\pard\intbl\itap1\pardeftab720\ri0\sl300\qr\partightenfactor0
+
+\f1\fs20 \cf0 \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth750\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf2 \clbrdrl\brdrs\brdrw20\brdrcf2 \clbrdrb\brdrs\brdrw20\brdrcf2 \clbrdrr\brdrs\brdrw20\brdrcf2 \clpadt150 \clpadl0 \clpadr150 \gaph\cellx4320
+\clvertalt \clshdrawnil \clbrdrt\brdrs\brdrw20\brdrcf2 \clbrdrl\brdrs\brdrw20\brdrcf2 \clbrdrb\brdrs\brdrw20\brdrcf2 \clbrdrr\brdrs\brdrw20\brdrcf2 \clpadt150 \clpadl0 \clpadr150 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\ri0\sl300\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\ri0\sl300\partightenfactor0
+
+\f0\fs18 \cf0 # A minimal set of facts is always gathered.\
+\pard\intbl\itap1\pardeftab720\ri0\sl300\qr\partightenfactor0
+
+\f1\fs20 \cf0 \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth750\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf2 \clbrdrl\brdrs\brdrw20\brdrcf2 \clbrdrb\brdrs\brdrw20\brdrcf2 \clbrdrr\brdrs\brdrw20\brdrcf2 \clpadt150 \clpadl0 \clpadr150 \gaph\cellx4320
+\clvertalt \clshdrawnil \clbrdrt\brdrs\brdrw20\brdrcf2 \clbrdrl\brdrs\brdrw20\brdrcf2 \clbrdrb\brdrs\brdrw20\brdrcf2 \clbrdrr\brdrs\brdrw20\brdrcf2 \clpadt150 \clpadl0 \clpadr150 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\ri0\sl300\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\ri0\sl300\partightenfactor0
+
+\f0\fs18 \cf0 #gather_subset = all\
+\pard\intbl\itap1\pardeftab720\ri0\sl300\qr\partightenfactor0
+
+\f1\fs20 \cf0 \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth750\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf2 \clbrdrl\brdrs\brdrw20\brdrcf2 \clbrdrb\brdrs\brdrw20\brdrcf2 \clbrdrr\brdrs\brdrw20\brdrcf2 \clpadt150 \clpadl0 \clpadr150 \gaph\cellx4320
+\clvertalt \clshdrawnil \clbrdrt\brdrs\brdrw20\brdrcf2 \clbrdrl\brdrs\brdrw20\brdrcf2 \clbrdrb\brdrs\brdrw20\brdrcf2 \clbrdrr\brdrs\brdrw20\brdrcf2 \clpadt150 \clpadl0 \clpadr150 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\ri0\sl300\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\ri0\sl300\partightenfactor0
+
+\f0\fs18 \cf0 \
+\pard\intbl\itap1\pardeftab720\ri0\sl300\qr\partightenfactor0
+
+\f1\fs20 \cf0 \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth750\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf2 \clbrdrl\brdrs\brdrw20\brdrcf2 \clbrdrb\brdrs\brdrw20\brdrcf2 \clbrdrr\brdrs\brdrw20\brdrcf2 \clpadt150 \clpadl0 \clpadr150 \gaph\cellx4320
+\clvertalt \clshdrawnil \clbrdrt\brdrs\brdrw20\brdrcf2 \clbrdrl\brdrs\brdrw20\brdrcf2 \clbrdrb\brdrs\brdrw20\brdrcf2 \clbrdrr\brdrs\brdrw20\brdrcf2 \clpadt150 \clpadl0 \clpadr150 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\ri0\sl300\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\ri0\sl300\partightenfactor0
+
+\f0\fs18 \cf0 # some hardware related facts are collected\
+\pard\intbl\itap1\pardeftab720\ri0\sl300\qr\partightenfactor0
+
+\f1\fs20 \cf0 \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth750\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf2 \clbrdrl\brdrs\brdrw20\brdrcf2 \clbrdrb\brdrs\brdrw20\brdrcf2 \clbrdrr\brdrs\brdrw20\brdrcf2 \clpadt150 \clpadl0 \clpadr150 \gaph\cellx4320
+\clvertalt \clshdrawnil \clbrdrt\brdrs\brdrw20\brdrcf2 \clbrdrl\brdrs\brdrw20\brdrcf2 \clbrdrb\brdrs\brdrw20\brdrcf2 \clbrdrr\brdrs\brdrw20\brdrcf2 \clpadt150 \clpadl0 \clpadr150 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\ri0\sl300\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\ri0\sl300\partightenfactor0
+
+\f0\fs18 \cf0 # with a maximum timeout of 10 seconds. This\
+\pard\intbl\itap1\pardeftab720\ri0\sl300\qr\partightenfactor0
+
+\f1\fs20 \cf0 \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth750\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf2 \clbrdrl\brdrs\brdrw20\brdrcf2 \clbrdrb\brdrs\brdrw20\brdrcf2 \clbrdrr\brdrs\brdrw20\brdrcf2 \clpadt150 \clpadl0 \clpadr150 \gaph\cellx4320
+\clvertalt \clshdrawnil \clbrdrt\brdrs\brdrw20\brdrcf2 \clbrdrl\brdrs\brdrw20\brdrcf2 \clbrdrb\brdrs\brdrw20\brdrcf2 \clbrdrr\brdrs\brdrw20\brdrcf2 \clpadt150 \clpadl0 \clpadr150 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\ri0\sl300\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\ri0\sl300\partightenfactor0
+
+\f0\fs18 \cf0 # option lets you increase or decrease that\
+\pard\intbl\itap1\pardeftab720\ri0\sl300\qr\partightenfactor0
+
+\f1\fs20 \cf0 \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth750\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf2 \clbrdrl\brdrs\brdrw20\brdrcf2 \clbrdrb\brdrs\brdrw20\brdrcf2 \clbrdrr\brdrs\brdrw20\brdrcf2 \clpadt150 \clpadl0 \clpadr150 \gaph\cellx4320
+\clvertalt \clshdrawnil \clbrdrt\brdrs\brdrw20\brdrcf2 \clbrdrl\brdrs\brdrw20\brdrcf2 \clbrdrb\brdrs\brdrw20\brdrcf2 \clbrdrr\brdrs\brdrw20\brdrcf2 \clpadt150 \clpadl0 \clpadr150 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\ri0\sl300\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\ri0\sl300\partightenfactor0
+
+\f0\fs18 \cf0 # timeout to something more suitable for the\
+\pard\intbl\itap1\pardeftab720\ri0\sl300\qr\partightenfactor0
+
+\f1\fs20 \cf0 \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth750\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf2 \clbrdrl\brdrs\brdrw20\brdrcf2 \clbrdrb\brdrs\brdrw20\brdrcf2 \clbrdrr\brdrs\brdrw20\brdrcf2 \clpadt150 \clpadl0 \clpadr150 \gaph\cellx4320
+\clvertalt \clshdrawnil \clbrdrt\brdrs\brdrw20\brdrcf2 \clbrdrl\brdrs\brdrw20\brdrcf2 \clbrdrb\brdrs\brdrw20\brdrcf2 \clbrdrr\brdrs\brdrw20\brdrcf2 \clpadt150 \clpadl0 \clpadr150 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\ri0\sl300\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\ri0\sl300\partightenfactor0
+
+\f0\fs18 \cf0 \
+\pard\intbl\itap1\pardeftab720\ri0\sl300\qr\partightenfactor0
+
+\f1\fs20 \cf0 \cell \lastrow\row
+\pard\pardeftab720\ri0\partightenfactor0
+
+\fs24 \cf0 \
+\pard\pardeftab720\ri0\partightenfactor0
+
+\f2 \cf0 \
+}
