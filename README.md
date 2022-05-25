@@ -7,16 +7,16 @@ The files in this repository were used to configure the network depicted below.
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the YML file may be used to install only certain pieces of it, such as Filebeat.
 
-![ansible.yml.txt](ansible.yml.txt)
+📝 ![ansible.yml.txt](ansible.yml.txt) 📝
 
-![instal-elk.yml.txt](instal-elk.yml.txt)
+📝 ![instal-elk.yml.txt](instal-elk.yml.txt) 📝
 
-![Hosts.txt](Hosts.txt)
+📝 ![Hosts.txt](Hosts.txt) 📝
 
-![Ansible/Filebeat-playbook.yml.txt](Ansible/Filebeat-playbook.yml.txt)
+📝 ![Ansible/Filebeat-playbook.yml.txt](Ansible/Filebeat-playbook.yml.txt) 📝
 
 
-![Diagrams/Project%201%20Azure%20Diagram.png](Diagrams/Project%201%20Azure%20Diagram.png)
+📝 ![Ansible/Metricbeat-playbook.txt](Ansible/Metricbeat-playbook.txt) 📝
 
 
 This document contains the following details:
@@ -78,7 +78,7 @@ Machines within the network can only be accessed by the JumpBox through SSH.
 Which machine did you allow to access your ELK VM? 
 
 
-- Jumpbox
+- 🖥 Jumpbox 🖥
 
 What was its IP address?
 
