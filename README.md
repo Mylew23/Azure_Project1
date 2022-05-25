@@ -114,7 +114,7 @@ We have installed the following Beats on these machines:
 
 ![Ansible/Metricbeat-playbook.txt](Ansible/Metricbeat-playbook.txt)
 
-![Ansible/Metricbeat-playbook.txt](Ansible/Metricbeat-playbook.txt)
+![images/%20filebeat%20status%20start.png](images/%20filebeat%20status%20start.png)
 
 TODO: Specify which Beats you successfully installed
 These Beats allow us to collect the following information from each machine:
