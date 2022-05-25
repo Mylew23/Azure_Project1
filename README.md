@@ -123,18 +123,31 @@ We have installed the following Beats on these machines:
 
 ![images/%20filebeat%20status%20start.png](images/%20filebeat%20status%20start.png)
 
-TODO: Specify which Beats you successfully installed
+
 These Beats allow us to collect the following information from each machine:
-TODO: In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which we use to track user logon events, etc.
+
+
+- Filebeat watches for log files/locations and collect log events.  Log Analysis & Elasticsearch
+
+
+- Metricbeat records metrics and statistical data from the operating system and from services running on the server  
+
+
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned:
 
 SSH into the control node and follow the steps below:
-Copy the configuration file to the ansible.
-Update the configuration file to include the Private IP address of the ELK-server [10.2.0.4]
-Run the playbook, and navigate to ____ to check that the installation worked as expected.
-TODO: Answer the following questions to fill in the blanks:
-Which file is the playbook? Where do you copy it?
-Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?
-_Which URL do you navigate to in order to check that the ELK server is running?
-As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc.
+
+
+- Copy the configuration file to the ansible.
+
+
+- Update the configuration file to include the Private IP address of the ELK-server [10.2.0.4]
+
+
+- Run the playbook, and navigate to (http://(ELKvm ip):5601/app/kibana) to check that the installation worked as expected.
+
+
+
+
+
