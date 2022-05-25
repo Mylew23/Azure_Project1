@@ -112,7 +112,9 @@ This ELK server is configured to monitor the following machines:
 
 We have installed the following Beats on these machines:
 
-![]()
+![Ansible/Metricbeat-playbook.txt](Ansible/Metricbeat-playbook.txt)
+
+![Ansible/Metricbeat-playbook.txt](Ansible/Metricbeat-playbook.txt)
 
 TODO: Specify which Beats you successfully installed
 These Beats allow us to collect the following information from each machine:
