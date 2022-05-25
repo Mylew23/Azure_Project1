@@ -45,11 +45,11 @@ The JumpBox is a secure computer that admins can connect to before giving out ad
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the logs and system metrics.
 What does Filebeat watch for?
 
-Filebeat watches for log files or locations and collect log events. After capturing logs and data it is then sent to the ELK Server. The filebeat watches for any informational changes in the system.
+- Filebeat watches for log files or locations and collect log events. After capturing logs and data it is then sent to the ELK Server. The filebeat watches for any informational changes in the system.
 
 What does Metricbeat record?
 
-Metricbeat records metric and statistical data from the server then ships them to the output that you specify such as Elasticsearch or Logstash on ELK server. Metricbeat also help monitor metrics on the system and services running on the server.
+- Metricbeat records metric and statistical data from the server then ships them to the output that you specify such as Elasticsearch or Logstash on ELK server. Metricbeat also help monitor metrics on the system and services running on the server.
 
 
 The configuration details of each machine may be found below.
