@@ -13,7 +13,7 @@ These files have been tested and used to generate a live ELK deployment on Azure
 
 ![Hosts.txt](Hosts.txt)
 
-![Diagrams/Project%201%20Azure%20Diagram.png](Diagrams/Project%201%20Azure%20Diagram.png)
+![Ansible/Filebeat-playbook.yml.txt](Ansible/Filebeat-playbook.yml.txt)
 
 
 ![Diagrams/Project%201%20Azure%20Diagram.png](Diagrams/Project%201%20Azure%20Diagram.png)
